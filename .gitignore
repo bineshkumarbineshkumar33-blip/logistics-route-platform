@@ -4,3 +4,13 @@ dist/
 __pycache__/
 *.db
 .env
+
+node_modules/
+.venv/
+.env
+.env.*
+!.env.example
+*.db
+__pycache__/
+dist/
+
