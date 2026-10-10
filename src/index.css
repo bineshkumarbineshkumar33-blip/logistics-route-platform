@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root { height: 100%; }
+body { @apply bg-mist font-body text-ink antialiased; }
+
+.stop-pin {
+  display: grid; place-items: center; width: 24px; height: 24px; border-radius: 50%;
+  color: #fff; font: 600 12px "Public Sans", sans-serif; border: 2px solid #fff;
+  box-shadow: 0 1px 4px rgba(23, 32, 42, .45);
+}
+.late-pin { background: #fff !important; color: #C8372D; border: 2px solid #C8372D; }
+.hub-pin { width: 22px; height: 22px; background: #17202A; border: 3px solid #fff; border-radius: 4px; box-shadow: 0 1px 4px rgba(23,32,42,.5); }
+.agent-pin { width: 14px; height: 14px; border-radius: 50%; border: 3px solid #fff; box-shadow: 0 1px 4px rgba(23,32,42,.5); }
+.leaflet-container { font-family: "Public Sans", system-ui, sans-serif; }
+
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+button:focus-visible, input:focus-visible, select:focus-visible { outline: 2px solid #17202A; outline-offset: 2px; }
